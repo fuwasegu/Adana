@@ -1,0 +1,35 @@
+{
+    "name": "lunain84/adana",
+    "description": "Japanese nickname generator.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lunain84",
+            "email": "hiro84runa98@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev" : {
+        "phpstan/phpstan": "^0.12.0",
+        "squizlabs/php_codesniffer": "^3.5",
+        "psy/psysh": "^0.10.9",
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts" : {
+        "test": "phpunit --no-coverage tests",
+        "shell": "psysh"
+    },
+    "autoload": {
+        "psr-4": {
+            "Adana\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Adana\\Tests\\": "tests/"
+        }
+    }
+}
